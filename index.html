@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eugeniya Sushkevich CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="cv/css/style.css" />
+    
+  </head>
+  <body class="page-body">
+    <header>
+      <button class="burger">
+        <span class="burger__line"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about-me">About me</a></li>
+          <li class="nav__item"><a href="#skills">Skills</a></li>
+          <li class="nav__item"><a href="#strengths">Strengths</a></li>
+          <li class="nav__item"><a href="#code-example">Code</a></li>
+          <li class="nav__item"><a href="#projects">Projects</a></li>
+          <li class="nav__item"><a href="#contact">Contact</a></li>
+          <li class="nav__item"><a href="#education">Education</a></li>
+          <li class="nav__item"><a href="#work">Work Experience</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="left-side">
+        <figure class="figure--left-side">
+          <img
+            src="img/photo.jpg"
+            width="380"
+            height="507"
+            class="photo"
+            alt="Photo of Eugeniya Sushkevich"
+          />
+        </figure>
+        <section class="contact" id="contact">
+          <h2 class="section-title">Contact</h2>
+          <ul class="contact__list">
+            <li class="contact__item">
+            Phone: <br>
+              +375 29 307 65 06 
+            </li>
+            <li class="contact__item">
+                GitHub: <br>
+                
+                 <a href="https://happyzhenya.github.io/rsschool-cv/cv.html" >happyzhenya</a>
+                </li>
+            <li class="contact__item">
+              Email:<a href="mailto:petr9ra@yandex.ru">happy.zhenya@gmail.com</a>
+            </li>
+            <li class="contact__item">
+              Address:<br />
+              <span>Minsk, Belarus</span>
+            </li>
+          </ul>
+        </section>
+        <section class="education" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul class="education__list">
+            <li class="education__item">
+              2003-2009 <br />Belarusian National Technical University (BNTU)<br />
+              Faculty of Information Technology and Robotics
+            </li>
+            <li class="education__item">
+              2012 <br />Android-BELHARD
+            </li>
+            <li class="education__item">
+              2021-2022 <br />RS School - Front-end Developer
+            </li>
+          </ul>
+        </section>
+        <section class="work" id="work">
+            <h2 class="section-title">Work Experience</h2>
+            <ul class="work__list">
+              <li class="work__item">
+               2015-2016 <br/>  Minsk tractor plant <br/>
+               Delphi, Oracle
+              </li>
+              <li class="work__item">
+                2016-2022 <br/>It school "Codewarts"<br/>
+                Teacher of robotics and programming for children
+               </li>
+            </ul>
+        </section>
+      </div>
+      <div class="right-side">
+      <section class="page-title">
+        <h1 class="main-title">Eugeniya <br />Sushkevich</h1>
+        <p>Junior Front-End developer</p>
+      </section>
+      <figure class="figure--right-side">
+        <img
+          src="img/photo.jpg"
+          width="380"
+          height="507"
+          class="photo"
+          alt="Photo of Eugeniya Sushkevich"
+        />
+      </figure>
+      <section class="about-me" id="about-me">
+          <h2 class="section-title">About me</h2>
+          <p>
+            I like to study and learn something new. I like to read books, listen to music of different genres. 
+            I like to  work and see the results of my work.<br />
+            I’m hardworking person, who wants to evolve in this field constantly and likes 
+            to solve complex and difficult problems, as it gives lots of experience and 
+            helps to grow as a developer faster.<br />
+            I’m interested in Web Development because this occupation provides endless possibilities 
+            for professional growth, besides there’s a huge amount of free high quality resources 
+            for self-education and a large community of developers.<br />
+            I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient Frontend Developer.
+          </p>
+        </section>
+        <section class="skills" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul class="skills__list">
+            <li>Figma, Git, Webpack</li>
+            <li>HTML/HTML5, CSS3/SCSS, BEM</li>
+            <li>JavaScript/ES6</li>
+            <li>English - A2. On the way to B1 (English courses)</li>
+          </ul>
+        </section>
+        <section class="key-strengths" id="strengths">
+          <h2 class="section-title">Key strengths</h2>
+          <ul class="key-strengths__list">
+            <li>Hardworking</li>
+            <li>Responsible</li>
+            <li>Sociable</li>
+            <li>Quick learner</li>
+            <li>Goal-oriented</li>
+            <li>Conscientious</li>
+          </ul>
+        </section>
+        <section class="code-example" id="code-example">
+          <h2 class="section-title">Code example</h2>
+          <details>
+            <summary>From course</summary>
+            <pre>
+              <code data-language = "javascript">
+                  
+               
+               function runSlide(){  
+                 /*const card=document.querySelectorAll('.our_friends .pets_container .slider_pets .cards .card ');*/
+                 const card=document.querySelectorAll(".card ");
+                 console.log("card====", card)
+                 
+                 card.forEach(item =>{
+                   item.addEventListener("click", (e) => {
+                     pets.forEach(i => {
+                       console.log ("e====", e.target.id)
+                       console.log ("iname====", e.target.id)
+                       console.log("i=", i)
+                       if (e.target.id == i.name){
+                         createPopup(i)
+                         closePopup();
+                       }
+                       })
+                     popup.style.display="flex";
+                     document.body.style.overflow="hidden"
+                     })
+               
+                         });
+               
+                       }
+                              
+               function closePopup(){
+                 popup.addEventListener("click", (e)=>{
+                   if (e.target.classList=="popup"){
+                     popup.style.display="none"
+                     document.body.style.overflow=""
+                   }
+                 })
+                 let clsPopup=document.getElementById("close_popup");
+                 clsPopup.addEventListener("click", () =>{
+                   popup.style.display="none"
+                     document.body.style.overflow=""
+                 })
+               }
+               
+                       
+               
+               const burger=document.querySelector(".burger_menu");
+               const nav_list=document.querySelector('.nav_list');
+               const pageShadow = document.querySelector(".page_shadow")
+               const nav_item=document.querySelectorAll('.nav_item');
+               const header_inner=document.querySelector(".header_inner")
+               
+               burger.addEventListener('click', toggleBurger);
+               pageShadow.addEventListener('click', toggleBurger);
+               nav_item.forEach((el) => el.addEventListener('click',toggleBurger));
+               
+               function toggleBurger(){
+                 
+                 pageShadow.classList.toggle("page_shadow--active");
+                 header_inner.classList.toggle("header_inner--active");
+                 burger.classList.toggle("burger_menu--active")
+                 nav_list.classList.toggle('nav_list--active');
+               }
+               
+               const nav_link=document.querySelectorAll(".nav_link");
+               
+               
+               /* активная ссылка меню  по умолчанию*/ 
+               nav_link.forEach(el =>{ 
+                
+                  if (el.dataset.nav=='about'){el.classList.add('active')}})   
+               
+               /* сделать активным нажатое меню*/
+               change_Navlink_Active(nav_link);
+               function change_Navlink_Active(nameClass) {
+                   for (let i = 0; i < nameClass.length; i++) {/*прокручиваем в цикле все элементы*/
+                       nameClass[i].addEventListener('click', function() {  /*при клике на элемент 
+                      */
+                         for (let i = 0; i < nameClass.length; i++) {
+                           nameClass[i].classList.remove('active'); /*удаляем у всех class active*/
+                         }
+                         this.classList.add('active');/*добавляем class active по которому кликнули */
+                       })
+                     }
+               }
+               
+               function dissableNavElements(){
+                
+                 
+                 
+                 nav_link.forEach(el => {
+                   el.addEventListener("click", () =>{
+                     console.log("el.dataset.nav", el.dataset.nav)
+                     if (el.dataset.nav =="help"){ return false}
+                   })
+                   
+                 })
+                 
+                 }
+              </code>
+            </pre>
+          </details>
+        </section>
+        <section class="projects" id="projects">
+          <h2 class="section-title">My projects</h2>
+          <ul class="projects__list">
+            <li class="projects__item">
+              <a href="https://rolling-scopes-school.github.io/happyzhenya-JSFEPRESCHOOL/portfolio/" target="_blank">
+                <img src="img/portfolio.png" width="1722" height="969" alt="Portfolio" class="projects__image">
+                <h3 class="projects__title">Project Portfolio
+                  <div class="projects__technologies">
+                    <img src="img/icons8-html-5-48.png" alt="HTML5" title="HTML5">
+                    <img src="img/icons8-css3-48.png" alt="CSS3" title="CSS3">
+                    <img src="img/icons8-javascript-48.png" alt="JavaScript" title="JavaScript">
+                  </div>
+                </h3>
+              </a>
+            </li>
+
+            <li class="projects__item">
+                <a href="https://rolling-scopes-school.github.io/happyzhenya-JSFE2022Q1/shelter/pages/main/" target="_blank">
+                  <img src="img/shelter.png" width="1722" height="969" alt="shelter" class="projects__image">
+                  <h3 class="projects__title">Shelter
+                    <div class="projects__technologies">
+                      <img src="img/icons8-html-5-48.png" alt="HTML5" title="HTML5">
+                      <img src="img/icons8-css3-48.png" alt="CSS3" title="CSS3">
+                      <img src="img/icons8-javascript-48.png" alt="JavaScript" title="JavaScript">
+                    </div>
+                  </h3>
+                </a>
+              </li>
+            <li class="projects__item">
+                <a href="https://happyzhenya.github.io/cssMemSlider/cssMemSlider/index.html" target="_blank">
+                  <img src="img/cssMemSlider.png" width="1722" height="969" alt="cssMemSlider" class="projects__image">
+                  <h3 class="projects__title">CssMemSlider
+                    <div class="projects__technologies">
+                      <img src="img/icons8-html-5-48.png" alt="HTML5" title="HTML5">
+                      <img src="img/icons8-css3-48.png" alt="CSS3" title="CSS3">
+                     
+                    </div>
+                  </h3>
+                </a>
+              </li>
+
+              <li class="projects__item">
+                <a href="https://rolling-scopes-school.github.io/happyzhenya-JSFEPRESCHOOL/memory-game/" target="_blank">
+                  <img src="img/memory-game_.png" width="1722" height="969" alt="memory game" class="projects__image">
+                  <h3 class="projects__title">Memory game
+                    <div class="projects__technologies">
+                      <img src="img/icons8-html-5-48.png" alt="HTML5" title="HTML5">
+                      <img src="img/icons8-css3-48.png" alt="CSS3" title="CSS3">
+                      <img src="img/icons8-javascript-48.png" alt="JavaScript" title="JavaScript">
+                    </div>
+                  </h3>
+                </a>
+              </li>
+
+              <li class="projects__item">
+                <a href="https://rolling-scopes-school.github.io/happyzhenya-JSFEPRESCHOOL/eco-sounds/" target="_blank">
+                  <img src="img/eco-sounds_.png" width="1722" height="969" alt="eco-sounds" class="projects__image">
+                  <h3 class="projects__title">Eco-sounds
+                    <div class="projects__technologies">
+                      <img src="img/icons8-html-5-48.png" alt="HTML5" title="HTML5">
+                      <img src="img/icons8-css3-48.png" alt="CSS3" title="CSS3">
+                      <img src="img/icons8-javascript-48.png" alt="JavaScript" title="JavaScript">
+                    </div>
+                  </h3>
+                </a>
+              </li>
+           
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <a class="footer__github" href="https://github.com/happyzhenya" target="_blank">
+        My GitHub
+      </a>
+      <p class="footer__year">2021-2022</p>
+     
+    </footer>
+    <script src="rainbow-custom.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
